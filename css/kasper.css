@@ -1,3 +1,8 @@
+/* Start Variables */
+:root {
+    --main-color: #19c8fa;
+}
+/* End Variables */
 /* Start Global rules */
 * {
     -webkit-box-sizing: border-box;
@@ -11,6 +16,7 @@ html {
 }
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: black;
 }
 ul {
     list-style: none;
@@ -39,5 +45,66 @@ ul {
         width: 1170px;
     }
 }
-
 /* End Global rules */
+/* Start Header */
+header {
+
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
+    background-color: #a2a2a2;
+    height: 1px;
+    left: 15px;
+}
+header .logo img {
+    width: 105px;
+}
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 40px 10px;
+    font-size: 14px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+header nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 40px;
+    border-left: 1px solid white;
+}
+header nav .form i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+/* End Header */
