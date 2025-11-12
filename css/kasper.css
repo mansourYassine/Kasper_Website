@@ -319,7 +319,7 @@ header nav .form i {
     overflow: hidden;
 }
 .design::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -359,8 +359,8 @@ header nav .form i {
     padding: 15px 0;
 }
 .design .text ul li::before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f108';
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
     font-weight: 900;
     margin-right: 20px;
     position: relative;
@@ -383,7 +383,7 @@ header nav .form i {
     background-color: var(--main-color);
     color: white;
 }
-    /* Style images and caption*/
+/* Style images and caption*/
 .portfolio .imgs-container {
     display: flex;
     flex-wrap: wrap;
@@ -501,3 +501,65 @@ header nav .form i {
     }
 }
 /* End About */
+/* Start Stats */
+.stats {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/stats.png);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.stats::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+.stats .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.stats .container .box {
+    color: white;
+    background-color: var(--transparent-color);
+    padding: 50px;
+}
+@media (max-width: 767.98px) {
+    .stats .container .box {
+        flex-basis: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .stats .container .box {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .stats .container .box {
+        flex-basis: 25%;
+    }
+}
+.stats .container .box i {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+}
+.stats .container .box .number {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+.stats .container .box p {
+    font-size: 14px;
+}
+/* End Stats */
