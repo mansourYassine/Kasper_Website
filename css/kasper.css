@@ -860,6 +860,8 @@ header nav .form i {
     padding: 20px 20px 20px 60px;
     caret-color: var(--main-color);
     width: calc(100% - 130px);
+    height: 65px;
+    color: white;
 }
 .subscribe form input[type="submit"] {
     width: 130px;
